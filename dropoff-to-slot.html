@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
-<!--  Last Published: Thu Apr 12 2018 17:24:57 GMT+0000 (UTC)  -->
+<!--  Last Published: Wed May 02 2018 12:29:08 GMT+0000 (UTC)  -->
 <html data-wf-page="5acce5a95affdd02343370f9" data-wf-site="5975f05e6e571824118fde58">
 <head>
   <meta charset="utf-8">
@@ -21,7 +21,7 @@
 <body class="body">
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
     <div class="w-container">
-      <nav role="navigation" class="w-nav-menu"><a href="index.html" class="w-nav-link">Start</a><a href="start-keypad.html" class="w-nav-link">SCAN CODE OR LABEL</a><a href="/scan-label" class="w-nav-link">SCAN LABEL</a><a href="multi-package-dropoff.html" class="w-nav-link">SCAN MORE</a><a href="/deposit" class="w-nav-link">DEPOSIT</a><a href="pickup-from-slot.html" class="w-nav-link">Pickup</a><a href="error.html" class="w-nav-link">Error</a><a href="thank-you.html" class="w-nav-link">Thanks</a></nav>
+      <nav role="navigation" class="w-nav-menu"><a href="index.html" class="w-nav-link">Start</a><a href="start-keypad.html" class="w-nav-link">SCAN CODE OR LABEL</a><a href="/scan-label" class="w-nav-link">SCAN LABEL</a><a href="multi-package-dropoff-continue.html" class="w-nav-link">SCAN MORE</a><a href="/deposit" class="w-nav-link">DEPOSIT</a><a href="pickup-from-slot.html" class="w-nav-link">Pickup</a><a href="error.html" class="w-nav-link">Error</a><a href="thank-you.html" class="w-nav-link">Thanks</a></nav>
       <div class="w-nav-button">
         <div class="w-icon-nav-menu"></div>
       </div>
@@ -32,16 +32,18 @@
       <div class="message-box">
         <p class="message-text">Was the slot you just closed empty?</p><a href="#" class="button mr-10 w-button">yes</a><a href="#" class="button w-button">NO</a></div>
     </div>
-    <h1 class="centered-text">please deposit packages to open slot</h1><img src="images/8.png" class="centered-img top-pad">
-    <h1 class="centered-text"><span class="bolder">close door to Continue</span></h1>
-    <div class="button red medium w-row">
-      <div class="w-col w-col-3">
-        <div class="icon"></div>
+    <h1 class="help-heading">please deposit parcels to open slot</h1><img src="images/Asset-44x.png" srcset="images/Asset-44x-p-500.png 500w, images/Asset-44x.png 985w" sizes="(max-width: 479px) 100vw, 715.484375px" class="centered-img top-pad">
+    <h1 class="centered-text"><span class="bolder">close door to Continue</span></h1><a href="buildings-deposit-thanks.html" class="w-button">close door</a>
+    <a href="package-not-fit-close-door.html" class="full-link w-inline-block">
+      <div class="button red medium w-row">
+        <div class="w-col w-col-3">
+          <div class="icon"></div>
+        </div>
+        <div class="w-col w-col-9">
+          <div class="text-block-3">Parcel doesn&#x27;t fit!</div>
+        </div>
       </div>
-      <div class="w-col w-col-9">
-        <div>Package doesn&#x27;t fit?</div>
-      </div>
-    </div>
+    </a>
   </div>
   <div class="footer"></div>
   <div class="help-popup">
@@ -74,9 +76,11 @@
     </div>
     <div class="w-clearfix w-col w-col-4"><a href="#" class="help-btn w-inline-block"><img src="images/help-web-button.png" class="image-3"></a></div>
   </div>
-  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" intergrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" type="text/javascript" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="js/webflow.js" type="text/javascript"></script>
   <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
   <script>
 $(function(){
   	function moveit() {
@@ -94,6 +98,21 @@ $(function(){
   	$('.help-btn,.help-button,.close-btn').click(function(){
 		$('.help-popup').fadeToggle('fast');
 	});
+  //Buildings demo stuff
+   var units = [
+      "#1001 James Donnavan",
+      "#1001 Alex Donnavan",
+      "#1001 Jane Donnavan",
+      "#1010 Alex Donnely",
+      "#1201 Vipul Donna",
+      "#1222 Don Robinson"
+    ];
+    $( "#unit-name" ).autocomplete({
+      source: units,
+      change: function() {
+      	window.location.href = "/buildings-found-tenant";
+      }
+    });
 });
 </script>
 </body>

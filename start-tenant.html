@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <!--  This site was created in Webflow. http://www.webflow.com  -->
 <!--  Last Published: Wed May 02 2018 12:29:08 GMT+0000 (UTC)  -->
-<html data-wf-page="5acf6f190b1c9ff1072ec917" data-wf-site="5975f05e6e571824118fde58">
+<html data-wf-page="5ad773f556a6416258700e1a" data-wf-site="5975f05e6e571824118fde58">
 <head>
   <meta charset="utf-8">
-  <title>Buildings - deposit - thanks</title>
-  <meta content="Buildings - deposit - thanks" property="og:title">
+  <title>Start Tenant</title>
+  <meta content="Start Tenant" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <meta content="Webflow" name="generator">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
@@ -18,7 +18,7 @@
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
   <link href="https://daks2k3a4ib2z.cloudfront.net/img/webclip.png" rel="apple-touch-icon">
 </head>
-<body class="body">
+<body class="body front-page">
   <div data-collapse="medium" data-animation="default" data-duration="400" class="navbar w-nav">
     <div class="w-container">
       <nav role="navigation" class="w-nav-menu"><a href="index.html" class="w-nav-link">Start</a><a href="start-keypad.html" class="w-nav-link">SCAN CODE OR LABEL</a><a href="/scan-label" class="w-nav-link">SCAN LABEL</a><a href="multi-package-dropoff-continue.html" class="w-nav-link">SCAN MORE</a><a href="/deposit" class="w-nav-link">DEPOSIT</a><a href="pickup-from-slot.html" class="w-nav-link">Pickup</a><a href="error.html" class="w-nav-link">Error</a><a href="thank-you.html" class="w-nav-link">Thanks</a></nav>
@@ -27,72 +27,21 @@
       </div>
     </div>
   </div>
-  <div class="app buildings-finish">
-    <div class="message-window">
-      <div class="message-box">
-        <p class="message-text">THIS IS A SYSTEM MESSAGE</p>
-        <div class="centered-row w-row">
-          <div class="w-col w-col-6"><a href="#" class="button w-button">yes</a></div>
-          <div class="w-col w-col-6"><a href="#" class="button w-button">NO</a></div>
-        </div>
-      </div>
-    </div><img src="images/smiling.png" class="centered-img top-pad">
-    <h1 class="centered-text bolder">deposit complete<br>Select next action:</h1>
-    <a href="buildings-pickup-undo.html" class="full-link w-inline-block">
-      <div class="button red final mr-10 w-row">
-        <div class="w-col w-col-3">
-          <div class="icon"></div>
-        </div>
-        <div class="w-col w-col-9">
-          <div>UNDO</div>
-        </div>
-      </div>
-    </a>
-    <a href="buildings-found-tenant.html" class="w-inline-block">
-      <div class="button final w-row">
-        <div class="w-col w-col-3">
-          <div class="icon"></div>
-        </div>
-        <div class="w-col w-col-9">
-          <div>OPEN MORE</div>
-        </div>
-      </div>
-    </a>
-    <a href="buildings-start.html" class="w-inline-block">
-      <div class="button final green w-row">
-        <div class="w-col w-col-3">
-          <div class="icon"></div>
-        </div>
-        <div class="w-col w-col-9">
-          <div>FINISH!</div>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="footer"></div>
-  <div class="help-popup">
-    <div class="close-btn"><img src="images/error.png" class="image"></div>
+  <div class="footer"></div><img src="images/touchscreen.gif" class="start-img">
+  <div class="help-popup main">
+    <div class="close-btn"></div>
     <div class="help-container w-container">
-      <h1 class="help-heading">How to use parcel port</h1>
+      <h1 class="help-heading">Welcome to parcel port!</h1>
       <div class="w-row">
-        <div class="w-col w-col-6">
-          <p class="help-text"><strong>Picking Up:</strong></p>
-          <ol class="help-text">
-            <li>Enter the pickup code or scan the QR code provided in the text and email sent to you from Parcel Port.</li>
-            <li>Collect your parcel from the newly opened compartment.</li>
-            <li>Close compartment door when finished.</li>
-          </ol>
+        <div class="w-col w-col-4"><a href="pickup-from-slot.html" class="full-link w-inline-block"><img src="images/Asset-94x.png" class="start-icon"><p class="help-text centered">Scan the code that was sent your phone</p></a></div>
+        <div class="w-col w-col-4">
+          <div class="or-text">OR</div>
         </div>
-        <div class="w-col w-col-6">
-          <p class="help-text"><strong>Dropping Off:</strong></p>
-          <ol class="help-text">
-            <li>Enter the parcel number or scan the parcel’s label.</li>
-            <li>Place your parcel in the newly opened compartment</li>
-            <li>Close compartment door when finished.</li>
-          </ol>
-        </div>
-      </div><a href="#" class="help-button ok-btn w-button">OK, GOT IT!</a></div>
+        <div class="w-col w-col-4"><a href="pickup-from-slot.html" class="full-link w-inline-block"><img src="images/Asset-104x.png" class="start-icon"><p class="help-text centered">Enter your code on keypad below</p></a></div>
+      </div>
+    </div>
   </div>
+  <div class="footer-text small">v 0.0.2</div>
   <div class="footer-row w-row">
     <div class="w-col w-col-4"><img src="images/pp_email_small.png" class="logo"></div>
     <div class="w-col w-col-4">
