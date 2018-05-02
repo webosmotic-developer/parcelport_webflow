@@ -17,9 +17,10 @@ label {
 .body {
   border-radius: 2px;
   background-color: #fff;
-  font-family: LemonMilkLight, sans-serif;
+  font-family: Lato, sans-serif;
   color: #000;
-  font-size: 18px;
+  font-size: 22px;
+  font-weight: 300;
 }
 
 .body.front-page {
@@ -35,7 +36,7 @@ label {
   height: 100%;
   margin-right: auto;
   margin-left: auto;
-  padding: 25% 20px 20px;
+  padding: 20% 20px 20px;
   text-align: center;
 }
 
@@ -46,11 +47,11 @@ label {
 }
 
 .app.less-pad {
-  padding-top: 15%;
+  padding-top: 6%;
 }
 
 .app.dropoff-app {
-  padding-top: 10%;
+  padding-top: 15%;
 }
 
 .app.buildings-finish {
@@ -91,12 +92,15 @@ label {
   margin-bottom: 20px;
   padding: 40px;
   border: 2px none #000;
+  border-radius: 4px;
   background-color: #001f89;
   box-shadow: 7px 7px 17px -6px rgba(0, 0, 0, .64);
   opacity: 1;
+  font-family: Lato, sans-serif;
   color: #fff;
   font-size: 34px;
   line-height: 40px;
+  font-weight: 400;
   text-align: center;
 }
 
@@ -167,6 +171,7 @@ label {
 
 .button.red {
   background-color: rgba(137, 0, 0, .83);
+  font-family: Lato, sans-serif;
 }
 
 .button.red.medium {
@@ -177,9 +182,9 @@ label {
   margin-left: auto;
   padding: 10px;
   border-style: solid;
-  border-color: rgba(137, 0, 0, .83);
+  border-color: #8a8a8a;
   background-color: transparent;
-  color: rgba(137, 0, 0, .83);
+  color: #8a8a8a;
   font-size: 25px;
 }
 
@@ -200,6 +205,8 @@ label {
 
 .button.red.final.mr-10 {
   margin-right: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .button.green {
@@ -226,8 +233,8 @@ label {
 .button.final {
   display: inline-block;
   min-width: 380px;
-  padding-top: 60px;
-  padding-bottom: 60px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .button.mr-10 {
@@ -331,11 +338,11 @@ label {
 
 .centered-text {
   margin-top: 0px;
-  font-family: Lemonmilk, sans-serif;
   color: rgba(0, 0, 0, .49);
   font-size: 35px;
-  font-weight: 300;
+  font-weight: 400;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .centered-text.no-margin {
@@ -422,6 +429,7 @@ label {
 }
 
 .centered-img.top-pad {
+  max-height: 300px;
   margin-top: 0px;
   margin-bottom: 80px;
 }
@@ -483,9 +491,12 @@ label {
 
 .help-heading {
   margin-bottom: 80px;
-  font-family: LemonMilkBold, sans-serif;
-  color: #8a8a8a;
+  font-family: Lato, sans-serif;
+  color: #000;
+  font-size: 45px;
+  font-weight: 300;
   text-align: center;
+  text-transform: uppercase;
 }
 
 .help-text {
@@ -503,6 +514,10 @@ label {
   line-height: 28px;
   font-weight: 300;
   text-align: left;
+}
+
+.help-text.centered {
+  color: #000;
 }
 
 .help-text.centered.bold {
@@ -554,7 +569,8 @@ label {
 }
 
 .bolder {
-  font-family: LemonMilkBold, sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .bolder.left {
@@ -611,7 +627,7 @@ label {
   position: relative;
   display: block;
   max-width: 120px;
-  margin-top: 54px;
+  margin-top: 22px;
   margin-right: auto;
   margin-left: auto;
   float: right;
@@ -631,6 +647,7 @@ label {
 
 .centered.help-caption {
   margin-top: 58px;
+  color: #8a8a8a;
 }
 
 .text-span-3 {
@@ -673,25 +690,22 @@ label {
 }
 
 .or-text {
-  margin-top: 111px;
-  font-family: LemonMilkBold, sans-serif;
+  margin-top: 120px;
+  font-family: Lato, sans-serif;
   color: #8a8a8a;
   font-size: 25px;
+  font-weight: 900;
   text-align: center;
 }
 
 .or-text.no-top {
-  margin-top: 20px;
+  margin-top: 11px;
   font-family: LemonMilkLight, sans-serif;
   font-weight: 300;
 }
 
 .text-block-2 {
   font-size: 48px;
-}
-
-.top-adj {
-  margin-top: -24px;
 }
 
 .image-5 {
@@ -707,7 +721,7 @@ label {
 }
 
 .scan-label-icon {
-  margin-top: -45px;
+  margin-top: -39px;
 }
 
 .admin-app {
@@ -828,6 +842,26 @@ label {
 .admin-tabs {
   display: block;
   max-width: 1024px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.full-link {
+  width: 100%;
+  text-decoration: none;
+}
+
+.text-block-3 {
+  color: #8a8a8a;
+}
+
+.tabs-content {
+  padding-top: 20px;
+}
+
+.start-icon {
+  display: block;
+  max-height: 200px;
   margin-right: auto;
   margin-left: auto;
 }
